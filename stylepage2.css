@@ -1,0 +1,32 @@
+.navbar {
+    background-color: #fd7171c7;
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: center; /* Center all content initially */
+    padding: 10px -30px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+    padding-bottom: -100px;
+}
+
+.navbar img {
+    height: 80px;
+    margin-left: -15px; /* Align image to the very left */
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    border-radius: 25px;
+}
+
+.navbar h1 {
+    flex-grow: 1; /* This makes the <h1> take the remaining space */
+    text-align: center; /* Center the text horizontally within the remaining space */
+    margin: 20px; /* Reset any default margins */
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-size: 45px;
+}
+
+

@@ -1,0 +1,75 @@
+.navbar {
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: -20px -20px -10px -20px;
+    height: 80px;
+}
+
+.navbar img {
+    height: 60px;
+    margin-left: -15px;
+    padding: 30px 20px 10px 40px;
+    border-radius: 20px;
+}
+
+.navbar h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 20px;
+    font-size: 45px;
+    font-family: "Noto Serif", serif;
+    padding : 30px 20px 10px 40px;
+    margin-left: -50px;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: -28px;
+    margin-right: -40px;
+}
+
+#searchInput {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fd7171c7;
+    color: white;
+}
+
+#dropdown {
+    position: absolute;
+    top: 45px;
+    width: 80%;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    display: none;
+    z-index: 1;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+.item-list {
+    display: none; /* Hide the item list, as it's for search */
+}

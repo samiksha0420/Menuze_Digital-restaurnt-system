@@ -1,0 +1,172 @@
+.navbar {
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: -20px -20px -10px -20px;
+    height: 80px;
+    position: fixed;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.navbar img {
+    height: 60px;
+    margin-left: -15px;
+    padding: 30px 20px 10px 40px;
+    border-radius: 20px;
+}
+
+.navbar h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 20px;
+    font-size: 45px;
+    font-family: "Noto Serif", serif;
+    padding : 30px 20px 10px 40px;
+    margin-left: -50px;
+}
+
+header {
+    text-align: center;
+    margin-top: 1px; /* Adjust this margin to prevent overlap with the navbar */
+    position: fixed; /* Fix the search bar at the top */
+    top: 80px; /* Place it just below the navbar */
+    left: 0;
+    right: 0;
+    z-index: 999; /* Ensure it's above other components but below the navbar */
+    background-color: white; /* Optional: Add background color to match the navbar */
+    padding: 10px 0; /* Optional: Add padding for some space */
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: -28px;
+    margin-right: -40px;
+}
+
+
+#searchInput {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fd7171c7;
+    color: black;
+}
+
+#dropdown {
+    position: absolute;
+    top: 45px;
+    width: 80%;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    display: none;
+    z-index: 1;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+.item-list {
+    display: none; /* Hide the item list, as it's for search */
+}
+.image img {
+    width: 200px; /* Adjust width as needed */
+    margin-bottom: 20px; /* Add space below the image */
+    max-width: 100%;
+    height: auto;
+    padding-top: 11%;
+    margin-left: 25%;
+    border-radius: 180px;
+    padding-top: 50%;
+    
+}
+/* .image1 img, .image2 img{
+    width: 150px; */
+    /* margin-bottom: 20px; Add space below the image */
+    /* max-width: 100%;
+    height: 150px;
+    padding-top: -3%;
+    margin-left: 5%;
+    border-radius: 20px;
+    padding-right: -0px ;
+} */
+/* .image2 img{
+    width: 150px; */
+    /* margin-bottom: 20px; Add space below the image */
+    /* max-width: 100%;
+    height: auto;
+    padding-top: -3%;
+    margin-left: 25%;
+    border-radius: 20px;
+    margin-left: 53%;
+    margin-bottom: auto;
+} */
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.veg-btn, .non-veg-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.veg-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 10%;
+}
+
+.non-veg-btn {
+    background-color: #FF6347;
+    color: white;
+    padding-top: 4%;
+    
+}
+
+.more-buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the buttons horizontally */
+    margin-top: 20px;
+}
+
+.extra-btn {
+    margin: 10px;
+    padding: 15px 60px; /* Increase left and right padding */
+    width: 300px; /* Increase the width of the button */
+    background-color: #fd7171c7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; /* Ensure text is centered */
+    font-size: 23px; /* Increase font size */
+    margin-left: 5%;
+    align-items: center;
+}
+
+.extra-btn:hover {
+    background-color: #d55656c7;
+}

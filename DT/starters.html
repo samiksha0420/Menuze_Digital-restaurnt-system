@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menuze</title>
+    <link rel="stylesheet" href="starters.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="Scanner.png" alt="Logo">
+        <h1>Menuze</h1>
+    </div>
+
+    <header>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search here..." onkeyup="filterItems()">
+            <div id="dropdown" class="dropdown-content"></div>
+        </div>
+    </header>
+
+    <!-- Example items to search -->
+    <div class="item-list">
+        <p class="item">Hot & Sour</p>
+        <p class="item">Tomato soup</p>
+        <p class="item">Manchow Soup</p>
+        <p class="item"> Cream of Brocoli</p>
+        <p class="item">Chiken Manchow</p>
+        <p class="item">Paneer Chilli</p>
+        <p class="item">Mushroom Chilli</p>
+        <p class="item">veg65</p>
+        <p class="item">Chicken Tandoori</p>
+        <p class="item">Seekh Kebaab</p>
+        <p class="item">Chicken chilli</p>
+        
+    </div>
+    
+    <div class="category">
+        <h2>Starters</h2>
+
+        <!-- Hot & Sour Soup -->
+        <div class="dish-box">
+            <div class="dish-details">
+                <h3>Paneer Chilli</h3>
+                <p>Spicy Indo-Chinese stir-fried paneer with peppers in tangy chili sauce.</p>
+                <div class="quantity-controls">
+                    <button class="minus-btn" onclick="removeFromCart('Paneer Chilli')">-</button>
+                    <span id="count-Paneer Chilli">0</span>
+                    <button class="add-to-cart-btn" onclick="addToCart('Paneer Chilli')">+</button>
+                </div>
+            </div>
+            <img src="Paneerchilli.jpeg" alt="Hot & Sour Soup" class="dish-image">
+        </div>
+
+        <!-- Tomato Soup -->
+        <div class="dish-box">
+            <div class="dish-details">
+                <h3>Mushroom Chilli</h3>
+                <p>Stir-fried mushrooms in a spicy, tangy sauce with peppers and onions.</p>
+                <div class="quantity-controls">
+                    <button class="minus-btn" onclick="removeFromCart('Tomato Soup')">-</button>
+                    <span id="count-Mushroom Chilli">0</span>
+                    <button class="add-to-cart-btn" onclick="addToCart('Tomato Soup')">+</button>
+                </div>
+            </div>
+            <img src="Mushroom.jpeg" alt="Tomato Soup" class="dish-image">
+        </div>
+        <!-- Manchow -->
+        <div class="dish-box">
+            <div class="dish-details">
+                <h3>Veg 65</h3>
+                <p>Crispy, spiced vegetables deep-fried and tossed in a flavorful seasoning.</p>
+                <div class="quantity-controls">
+                    <button class="minus-btn" onclick="removeFromCart('Veg 65')">-</button>
+                    <span id="count-Veg 65">0</span>
+                    <button class="add-to-cart-btn" onclick="addToCart('Veg 65')">+</button>
+                </div>
+            </div>
+            <img src="veg65.jpeg" alt="Veg 65" class="dish-image">
+        </div>
+        <!-- Brocoli -->
+        <div class="dish-box">
+            <div class="dish-details">
+                <h3>Chicken Tandoori</h3>
+                <p>Tender, marinated chicken grilled to perfection with smoky, bold spices.</p>
+                <div class="quantity-controls">
+                    <button class="minus-btn" onclick="removeFromCart('Chicken Tandoori')">-</button>
+                    <span id="count-Chicken Tandoori">0</span>
+                    <button class="add-to-cart-btn" onclick="addToCart('Chicken Tandoori')">+</button>
+                </div>
+            </div>
+            <img src="Tandoori.jpeg" alt="Tomato Soup" class="dish-image">
+        </div>
+        <!-- Tomato Soup -->
+        <div class="dish-box">
+            <div class="dish-details">
+                <h3>Seekh Kebab</h3>
+                <p>Minced meat skewers seasoned with herbs and spices, grilled to perfection.</p>
+                <div class="quantity-controls">
+                    <button class="minus-btn" onclick="removeFromCart('Seekh Kebab')">-</button>
+                    <span id="count-Seekh Kebab">0</span>
+                    <button class="add-to-cart-btn" onclick="addToCart('Seekh Kebab')">+</button>
+                </div>
+            </div>
+            <img src="Seekh.jpeg" alt="Tomato Soup" class="dish-image">
+        </div>
+        <div class="dish-box">
+            <div class="dish-details">
+                <h3>Chicken Chilli</h3>
+                <p>Spicy stir-fried chicken with chili sauce, peppers, and onions.</p>
+                <div class="quantity-controls">
+                    <button class="minus-btn" onclick="removeFromCart('Chicken Chilli')">-</button>
+                    <span id="count-Chicken Chilli">0</span>
+                    <button class="add-to-cart-btn" onclick="addToCart('Chicken Chilli')">+</button>
+                </div>
+            </div>
+            <img src="Chickenchilli.jpeg" alt="Tomato Soup" class="dish-image">
+        </div>
+
+
+
+        <div id="cart-bar" onclick="goToCart()">0 items added to cart</div>
+    </div>
+    <script src="starters.js"></script>
+</body>
+</html>

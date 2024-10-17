@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Menuze</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+        <div class="navbar">
+            <img src="Scanner.png" alt="Logo">
+            <h1>Menuze</h1>
+        </div>
+
+    <div class="cart-page">
+        <h2>Your Cart</h2>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+
+        <div class="bill-summary">
+            <h3>Bill Summary</h3>
+            <div class="summary-item">
+                <span>Item Total:</span>
+                <span id="item-total">$0.00</span>
+            </div>
+            <div class="summary-item">
+                <span>GST (5%):</span>
+                <span id="gst">0.00</span>
+            </div>
+            <div class="summary-item">
+                <span>Grand Total:</span>
+                <span id="grand-total">$0.00</span>
+            </div>
+            <button id="place-order" onclick="placeOrder()">Place Order</button>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>

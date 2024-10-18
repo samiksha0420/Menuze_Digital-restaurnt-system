@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menuze</title>
+    <link rel="stylesheet" href="stylepage2.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="navbar">
+        <img src="Scanner.png" alt="Logo">
+        <h1>Menuze</h1>
+    </div>
+
+    <header>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search here..." onkeyup="filterItems()">
+            <div id="dropdown" class="dropdown-content"></div>
+        </div>
+    </header>
+
+    <!-- Example items to search -->
+    <div class="item-list">
+        <p class="item">Pizza</p>
+        <p class="item">Burger</p>
+        <p class="item">Pasta</p>
+        <p class="item">Salad</p>
+        <p class="item">Fries</p>
+    </div>
+
+    <script src="scriptpage2.js"></script>
+</body>
+</html>

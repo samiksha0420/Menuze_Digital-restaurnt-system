@@ -1,0 +1,140 @@
+/* Basic Styles for Cart Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #f17171;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: -50px -20px -10px -20px;
+    height: 80px;
+    position: fixed;
+    padding-right: 60px;
+    text-align: center;
+}
+
+.navbar img {
+    height: 60px;
+    margin-left: -15px;
+    padding: 30px 20px 10px 40px;
+    border-radius: 20px;
+}
+
+.navbar h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 20px;
+    font-size: 45px;
+    font-family: "Noto Serif", serif;
+    padding : 30px 20px 10px 40px;
+    margin-left: -50px;
+}
+
+.cart-page {
+    max-width: 1200px;
+    margin: 50px auto;
+    /* padding: 20px; */
+    padding-top: 60px;
+    padding-left: 10px;
+    
+}
+
+.cart-items {
+    margin-bottom: 30px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.cart-item img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+.cart-item-details h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.cart-item-details span {
+    display: block;
+    font-size: 14px;
+    color: #888;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quantity-controls span {
+    font-size: 16px;
+}
+
+.quantity-controls button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.quantity-controls button:hover {
+    background-color: #218838;
+}
+
+.bill-summary {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bill-summary h3 {
+    margin-top: 0;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+#place-order {
+    background-color: #f17171;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#place-order:hover {
+    background-color: #f17171;
+}

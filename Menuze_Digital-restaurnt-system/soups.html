@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menuze</title>
+    <link rel="stylesheet" href="soups.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="navbar">
+        <img src="Scanner.png" alt="Logo">
+        <h1>Menuze</h1>
+    </div>
+
+    <header>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search here..." onkeyup="filterItems()">
+            <div id="dropdown" class="dropdown-content"></div>
+        </div>
+    </header>
+
+    <!-- Example items to search -->
+    <div class="item-list">
+        <p class="item">Pizza</p>
+        <p class="item">Burger</p>
+        <p class="item">Pasta</p>
+        <p class="item">Salad</p>
+        <p class="item">Fries</p>
+    </div>
+    
+    <div class="category">
+        <h2>Soups</h2>
+
+        <!-- Hot & Sour Soup -->
+        <div class="dish-box">
+            <div class="dish-details">
+                <h3>Hot & Sour Soup</h3>
+                <p>A delicious combination of spicy and sour flavors, perfect for a cold day.</p>
+                <div class="quantity-controls">
+                    <button class="minus-btn" onclick="removeFromCart('Hot & Sour Soup')">-</button>
+                    <span id="count-Hot & Sour Soup">0</span>
+                    <button class="add-to-cart-btn" onclick="addToCart('Hot & Sour Soup')">+</button>
+                </div>
+            </div>
+            <img src="hotsour.jpeg" alt="Hot & Sour Soup" class="dish-image">
+            <div class="price-box">
+                <span>$5.99</span>
+            </div>
+        </div>
+
+        <!-- Tomato Soup -->
+        <div class="dish-box">
+            <div class="dish-details">
+                <h3>Tomato Soup</h3>
+                <p>A rich and flavorful soup made with fresh tomatoes and herbs.</p>
+                <div class="quantity-controls">
+                    <button class="minus-btn" onclick="removeFromCart('Tomato Soup')">-</button>
+                    <span id="count-Tomato Soup">0</span>
+                    <button class="add-to-cart-btn" onclick="addToCart('Tomato Soup')">+</button>
+                </div>
+            </div>
+            <img src="tomatosoup.jpeg" alt="Tomato Soup" class="dish-image">
+            <div class="price-box">
+                <span>$5.99</span>
+            </div>
+        </div>
+
+        <!-- Manchow -->
+        <div class="dish-box">
+            <div class="dish-details">
+                <h3>Manchow Soup</h3>
+                <p>Spicy vegetable soup with soy broth, topped with crispy noodles.</p>
+                <div class="quantity-controls">
+                    <button class="minus-btn" onclick="removeFromCart('Tomato Soup')">-</button>
+                    <span id="count-Tomato Soup">0</span>
+                    <button class="add-to-cart-btn" onclick="addToCart('Tomato Soup')">+</button>
+                </div>
+            </div>
+            <img src="manchow.jpeg" alt="Tomato Soup" class="dish-image">
+            <div class="price-box">
+                <span>$5.99</span>
+            </div>
+        </div>
+
+        <!-- Brocoli -->
+        <div class="dish-box">
+            <div class="dish-details">
+                <h3>Cream of Brocoli</h3>
+                <p>Velvety broccoli soup blended with cream for a smooth, rich taste.</p>
+                <div class="quantity-controls">
+                    <button class="minus-btn" onclick="removeFromCart('Tomato Soup')">-</button>
+                    <span id="count-Tomato Soup">0</span>
+                    <button class="add-to-cart-btn" onclick="addToCart('Tomato Soup')">+</button>
+                </div>
+            </div>
+            <img src="Brocoli.jpeg" alt="Tomato Soup" class="dish-image">
+            <div class="price-box">
+                <span>$5.99</span>
+            </div>
+        </div>
+
+        <!-- Tomato Soup -->
+        <div class="dish-box">
+            <div class="dish-details">
+                <h3>Chicken Manchow</h3>
+                <p>Spicy chicken soup with vegetables, soy broth, and crispy noodles</p>
+                <div class="quantity-controls">
+                    <button class="minus-btn" onclick="removeFromCart('Tomato Soup')">-</button>
+                    <span id="count-Tomato Soup">0</span>
+                    <button class="add-to-cart-btn" onclick="addToCart('Tomato Soup')">+</button>
+                </div>
+            </div>
+            <img src="Chickenmanchow.jpeg" alt="Tomato Soup" class="dish-image">
+            <div class="price-box">
+                <span>$5.99</span>
+            </div>
+        </div>
+
+        <div class="dish-box">
+            <div class="dish-details">
+                <h3>Paaya Soup</h3>
+                <p>Slow-cooked goat trotters soup infused with rich spices and herbs.</p>
+                <div class="quantity-controls">
+                    <button class="minus-btn" onclick="removeFromCart('Tomato Soup')">-</button>
+                    <span id="count-Tomato Soup">0</span>
+                    <button class="add-to-cart-btn" onclick="addToCart('Tomato Soup')">+</button>
+                </div>
+            </div>
+            <img src="Paaya.jpeg" alt="Tomato Soup" class="dish-image">
+            <div class="price-box">
+                <span>$5.99</span>
+            </div>
+        </div>
+
+        
+        
+
+
+
+        <div id="cart-bar" onclick="goToCart()">0 items added to cart</div>
+    </div>
+    <script src="soups.js"></script>
+</body>
+</html>
